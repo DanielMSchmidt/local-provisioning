@@ -1,0 +1,36 @@
+---
+- hosts: local
+  connection: local
+
+  roles:
+     - {role: cask, tags: cask, when: "ansible_os_family == 'Darwin'"}
+    # - {role: fish, tags: fish}
+    # - {role: git, tags: git}
+    # - {role: home, tags: home}
+    # - {role: iterm, tags: iterm, when: "ansible_os_family == 'Darwin'"}
+     - {role: editorconfig, tags: editorconfig, when: "ansible_os_family == 'Darwin'"}
+     - {role: jdk, tags: jdk}
+     - {role: node, tags: node}
+    # - {role: elm, tags: elm}
+     - {role: atom, tags: atom}
+     - {role: android-studio, tags: android-studio}
+     - {role: docker, tags: docker}
+     - {role: virtualbox, tags: virtualbox}
+     - {role: android-ndk, tags: android-ndk}
+     - {role: android-sdk, tags: android-sdk}
+     - {role: watchman, tags: watchman}
+     - {role: nova, tags: nova}
+     - {role: alfred, tags: alfred, when: "ansible_os_family == 'Darwin'"}
+     - {role: atom, tags: atom}
+     - {role: caffeine, tags: caffeine, when: "ansible_os_family == 'Darwin'"}
+     - {role: dash, tags: dash, when: "ansible_os_family == 'Darwin'"}
+     - {role: firefox, tags: firefox}
+     - {role: flux, tags: flux, when: "ansible_os_family == 'Darwin'"}
+     - {role: flycut, tags: flycut, when: "ansible_os_family == 'Darwin'"}
+     - {role: franz, tags: franz, when: "ansible_os_family == 'Darwin'"}
+     - {role: google-chrome-canary, tags: google-chrome-canary, when: "ansible_os_family == 'Darwin'"}
+     - {role: rescuetime, tags: rescuetime, when: "ansible_os_family == 'Darwin'"}
+     - {role: sourcetree, tags: sourcetree, when: "ansible_os_family == 'Darwin'"}
+     - {role: spectacle, tags: spectacle, when: "ansible_os_family == 'Darwin'"}
+     - {role: vlc, tags: vlc}
+     - {role: z, tags: z}

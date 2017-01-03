@@ -1,0 +1,10 @@
+---
+# Change vars according to your setup
+
+# Global
+user: "401341"
+theme: "bobthefish"
+
+# Git
+git_name: "Daniel Schmidt"
+git_email: "danielmschmidt92@gmail.com"
