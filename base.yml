@@ -29,6 +29,7 @@
      - {role: flycut, tags: flycut, when: "ansible_os_family == 'Darwin'"}
      - {role: franz, tags: franz, when: "ansible_os_family == 'Darwin'"}
      - {role: google-chrome-canary, tags: google-chrome-canary, when: "ansible_os_family == 'Darwin'"}
+     - {role: gas-mask, tags: gas-mask, when: "ansible_os_family == 'Darwin'"}
      - {role: rescuetime, tags: rescuetime, when: "ansible_os_family == 'Darwin'"}
      - {role: sourcetree, tags: sourcetree, when: "ansible_os_family == 'Darwin'"}
      - {role: spectacle, tags: spectacle, when: "ansible_os_family == 'Darwin'"}
