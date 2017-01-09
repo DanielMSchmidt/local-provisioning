@@ -8,6 +8,7 @@
     # - {role: git, tags: git}
     # - {role: home, tags: home}
     # - {role: iterm, tags: iterm, when: "ansible_os_family == 'Darwin'"}
+     - {role: go, tags: go}
      - {role: editorconfig, tags: editorconfig, when: "ansible_os_family == 'Darwin'"}
      - {role: jdk, tags: jdk}
      - {role: node, tags: node}
